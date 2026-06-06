@@ -1,0 +1,2 @@
+{"type":"server-started","port":50662,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:50662","screen_dir":"/Users/samhawkins/mac-app-brainstorm/.superpowers/brainstorm/26372-1780652254/content","state_dir":"/Users/samhawkins/mac-app-brainstorm/.superpowers/brainstorm/26372-1780652254/state"}
+{"type":"server-stopped","reason":"idle timeout"}
