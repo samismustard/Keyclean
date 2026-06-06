@@ -1,0 +1,32 @@
+name: KeyClean
+options:
+  bundleIdPrefix: com.keyclean
+  deploymentTarget:
+    macOS: "13.0"
+
+targets:
+  KeyClean:
+    type: application
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - KeyClean
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.keyclean.app
+        SWIFT_VERSION: 5.9
+        ENABLE_HARDENED_RUNTIME: YES
+        CODE_SIGN_ENTITLEMENTS: KeyClean/KeyClean.entitlements
+        INFOPLIST_FILE: KeyClean/Info.plist
+
+  KeyCleanTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - KeyCleanTests
+    dependencies:
+      - target: KeyClean
+    settings:
+      base:
+        SWIFT_VERSION: 5.9
